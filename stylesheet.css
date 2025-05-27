@@ -627,10 +627,11 @@ body.dark .job-description {
 
 /* Contact Section */
 .contact-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
   margin-top: 3rem;
+  width: 50%;
+  height: 50%;
+  margin-left: 300px;
 }
 
 .contact-info {
