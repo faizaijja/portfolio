@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <title>Faiza Mutesi - Software Developer</title>
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Faiza M.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="Resume.pdf" download="Faiza-Mutesi-Resume.pdf" type="application/pdf" >Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌓 Theme</button>
+        </div>
+    </nav>
+
+     <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+                <li><a href="Resume.pdf" download="Faiza-Mutesi-Resume.pdf">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h1>Faiza Mutesi</h1>
+            <div class="typing-text" id="typing-text"></div>
+            <p style="color: var(--gray); font-size: 1.1rem; margin-bottom: 2rem;">
+                Detail-oriented software developer who turns ideas into interactive experiences—one line of code at a time.
+                I design and develop smart, and user-friendly software solutions for real-world projects, 
+                with a splash of creativity and a lot of coffee!  
+            </p>
+            
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Projects Section HTML -->
+<section id="projects">
+    
+
+    <div class="section-header fade-in">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">A showcase of my development work and creative solutions</p>
+    </div>
+
+    <div class="projects-container">
+       
+
+        <div class="project-card fade-in">
+            <div class="project-image">
+               <img src="images/task-management.PNG" alt="Task Management App" onclick="openModal(this)">
+                
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Task Management System</h3>
+                <p class="project-description">
+                    A collaborative task management application with team features, deadline tracking, 
+                    and progress visualization. Includes drag-and-drop functionality and real-time updates.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <div class="project-image">
+                <img src="images\data-ai.PNG" alt="Data Analytics Platform" onclick="openModal(this)">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Data Analytics Platform</h3>
+                <p class="project-description">
+                    A powerful data visualization platform that transforms complex datasets into 
+                    interactive charts and insights. Features custom reporting and export capabilities.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">Express</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <div class="project-image">
+                <img src="images\inventory.PNG" alt="POS System" onclick="openModal(this)">
+            </div>
+            
+            <div class="project-content">
+                <h3 class="project-title">Inventory Management System</h3>
+                <p class="project-description">
+                   A centralized solution for tracking and managing company inventory, incorporating transaction history, account management, and financial planning tools. 
+                   Features a responsive design optimized for all devices
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">API Integration</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <div class="project-image">
+                <img src="images/elearning.PNG" alt="Learning Management System" onclick="openModal(this)">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Learning Management System</h3>
+                <p class="project-description">
+                    An edutainment platform for children with learning disabilities, featuring assignments, 
+                    progress tracking, and interactive quizzes. Built for scalability and performance.
+                </p>
+                <div class="project-tech">
+                   <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="project-card fade-in">
+            <div class="project-image">
+                <img src="images/fitness.PNG" alt="Fitness Tracker" onclick="openModal(this)">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Health Tracking System</h3>
+                <p class="project-description">
+                    A health tracker that helps individuals on their fitness journey.
+                    It helps them to set nutirition goals, it tracks menstrual cycles, and provides insights to improve their overall health.
+                </p>
+                <div class="project-tech">
+                   <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card fade-in">
+            <div class="project-image">
+                <img src="images/livestock.PNG" alt="Livestock Health Advisor" onclick="openModal(this)">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Livestock Health Advisor</h3>
+                <p class="project-description">
+                    A traditional AI-powered solution designed to help farmers and veterinarians diagnose and manage livestock diseases efficiently, 
+                    improving animal health and reducing losses in agriculture.
+                </p>
+                <div class="project-tech">
+                   <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Ready to collaborate on your next project or discuss opportunities</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <h3 style="color: var(--primary); margin-bottom: 2rem;">Get In Touch</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-icon"><img src="images\icons8-email-30.png"></div>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:hmanita24@gmail.com" style="color: var(--primary);">hmanita24@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><img src="images\icons8-phone-48.png"></div>
+                    <div>
+                        <strong>Phone</strong><br>
+                        <a href="tel:+250786061493" style="color: var(--primary);">+250 786 061 493</a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="contact-form fade-in">
+                <h3 style="color: var(--primary); margin-bottom: 2rem;">Send a Message</h3>
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Faiza Mutesi. All rights reserved. | Built with passion for technology</p>
+    </footer>
+
+         <!-- Image Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img id="modalImage" class="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    
+
+   </body>
+   </html>
