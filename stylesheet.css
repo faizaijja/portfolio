@@ -205,6 +205,47 @@ body.dark .mobile-menu {
   .hero {
     margin-top: 70px;
   }
+  .contact-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .contact-info {
+    flex-direction: column; /* Stack vertically on mobile */
+    align-items: stretch;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .contact-item {
+    min-width: auto;
+    margin-bottom: 0;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .contact-info {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* Desktop layout - side by side */
+@media (min-width: 769px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 /* Projects Section */
 .projects-container {
@@ -627,18 +668,25 @@ body.dark .job-description {
 
 /* Contact Section */
 .contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 3rem;
   margin-top: 3rem;
-  width: 50%;
-  height: 50%;
-  margin-left: 300px;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-info {
-  background: white;
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
 }
 
 body.dark .contact-info {
@@ -648,13 +696,14 @@ body.dark .contact-info {
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 200px;
 }
 
 .contact-icon {
   width: 50px;
   height: 50px;
-
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -662,6 +711,8 @@ body.dark .contact-info {
   color: white;
   margin-right: 1rem;
   font-size: 1.2rem;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  flex-shrink: 0; 
 }
 
 .contact-form {
